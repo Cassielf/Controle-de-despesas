@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">    
+        <title>Control de de despesas</title>        
+    </head>
+    <body>
+
+        <h1>Controle de despesas</h1>
+        
+        <div>
+            <h4>SALDO ATUAL</h4>
+            <h1 id="balance"></h1>
+
+            <div> 
+                <div>
+                    <h4>RECEITAS</h4>
+                    <p id="money-plus"></p>
+                </div>
+
+                <div>
+                    <h4>DESPESAS</h4>
+                    <p id="money-minus"></p>
+                </div>              
+
+            </div>
+
+            <!-- transacoes   -->
+            <h3>Transações</h3>
+            <ul id="transactions">
+                <!-- aqui irá receber a lista dinamica do objeto  dummyTransactions  -->
+            </ul>  
+
+
+            <h3>Adicionar transação</h3>
+            <form id="formulario">
+                <div>
+                    <label>Nome</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div>
+                    <label>Valor</label>
+                    <small>(negativo - despesas, positivo - receitas)</small>
+                    <input type="text" id="amount">
+                </div>
+
+                <button>Adicionar</button>
+            </form>
+
+        </div>
+    
+        <script src="script.js"></script>
+    </body>    
+</html>
